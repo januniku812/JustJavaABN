@@ -13,8 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity<View> extends AppCompatActivity {
 
     /** intial number of coffee */
-
-    int numberOfCoffees = 2;
+    TextView currentNumberOfCoffees  = (TextView) findViewById(
+            R.id.quantity_text_view);
+    String stringNumberOfCoffees = currentNumberOfCoffees.getText().toString();
+    int numberOfCoffees = Integer.parseInt(stringNumberOfCoffees);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
