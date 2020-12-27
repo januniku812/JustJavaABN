@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity<View> extends AppCompatActivity {
 
-    /** intial number of coffee */
+    /** getting the number of coffees */
     TextView currentNumberOfCoffees  = (TextView) findViewById(
             R.id.quantity_text_view);
     String stringNumberOfCoffees = currentNumberOfCoffees.getText().toString();
@@ -45,6 +45,7 @@ public class MainActivity<View> extends AppCompatActivity {
     public void decrement(android.view.View view){
         numberOfCoffees = numberOfCoffees-1;
         display(numberOfCoffees);
+        displayPrice(numberOfCoffees);
     }
 
     /** Number of coffee var goes inside number and numberInput, displaying the amount of Coffee and price respectively*/
