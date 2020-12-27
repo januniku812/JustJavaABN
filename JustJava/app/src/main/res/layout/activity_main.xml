@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firsttextview"
+        android:layout_marginStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstTextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" />
+<!--    Quantity Display(1,2,3... coffees)-->
+    <LinearLayout
+        android:id="@+id/sublinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/increaseOrderButton"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:onClick="increment"
+            android:shadowColor="@color/black"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/initialCoffeeNumber"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/decreaseOrderButton"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:onClick="decrement"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/thirdtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thirdTextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="0dp" />
+<!--Total price of total coffees for 5 dollars each-->
+    <TextView
+        android:id="@+id/quantity_price_text_view"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:text="@string/initialTotalCoffeePrice"
+        android:textAllCaps="true"
+        android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitOrder"
+        android:text="Order" />
+</LinearLayout>

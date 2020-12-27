@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="firstTextView">Quantity</string>
+    <string name="thirdTextView">Price</string>
+    <string name="initialCoffeeNumber">2</string>
+    <string name="initialTotalCoffeePrice">$10</string>
+</resources>
